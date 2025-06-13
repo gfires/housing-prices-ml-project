@@ -157,15 +157,34 @@ To run the models and reproduce the results, follow these steps:
     cd <repository-name>
     ```
 
-2.  **Install dependencies:**
+2.  **Set up a Python Virtual Environment (Recommended):**
+    This isolates your project dependencies and helps prevent conflicts with other Python projects.
+    ```bash
+    python -m venv .venv
+    ```
+    **Activate the virtual environment:**
+    * **Windows:**
+        ```bash
+        .\.venv\Scripts\activate
+        ```
+    * **macOS / Linux:**
+        ```bash
+        source ./.venv/bin/activate
+        ```
+
+3.  **Install dependencies:**
+    Make sure your virtual environment is activated before running this command.
     ```bash
     pip install pandas numpy seaborn matplotlib scikit-learn tensorflow
     ```
 
-3.  **Prepare the dataset:**
-    Ensure `train.csv` is in the root directory of the project.
+4.  **Configure your IDE (e.g., VS Code):**
+    If you're using an IDE like VS Code, ensure you select the newly created virtual environment as your Python interpreter. In VS Code, open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P), search for "Python: Select Interpreter", and choose the `'.venv'` environment. This will help your IDE's language server (like Pylance) correctly identify installed packages.
 
-4.  **Run the Python script:**
+5.  **Prepare the dataset:**
+    Download the `train.csv` file from [**Direct Link to your train.csv**](YOUR_GIST_RAW_LINK_HERE_OR_GITHUB_RAW_LINK) and place it in the root directory of this project.
+
+6.  **Run the Python script:**
     ```bash
     python housing_workshop.py
     ```
