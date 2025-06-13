@@ -1,0 +1,30 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+env/
+.venv/
+venv/
+ENV/
+
+# Ignore environment variable files
+.env
+
+# Ignore macOS and VS Code system files
+.DS_Store
+.vscode/
+
+# Ignore output/model files (optional)
+*.h5
+*.pkl
+*.pt
+*.model
+*.log
+
+# Prevent future data files from being tracked except train.csv
+*.csv
+!train.csv
